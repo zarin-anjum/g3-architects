@@ -18,7 +18,21 @@
 }
 
 .dark-2{
+    color: #424242;
+}
+
+.dark-3{
     color: #727272;
+}
+
+.btn-primary{
+    background-color: #ff900e;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 25px;
 }
 
 /* Header Styles */
@@ -28,6 +42,7 @@
 
 .navbar{
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav-item{
@@ -43,10 +58,32 @@
 
 .brand{
     font-weight: 700;
-    font-size: 45px;
+    font-size: 3rem;
 }
 
-.navbar, .brand{
+.navbar, .banner{
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.banner-content{
+    max-width: 865px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title{
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.banner-description{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.banner-image{
+    max-height: 700px;
+    margin-bottom: 45px;
 }
