@@ -29,10 +29,24 @@
     background-color: #ff900e;
     color: #ffffff;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25rem;
     border: none;
     border-radius: 8px;
     padding: 20px 25px;
+}
+
+.section-title{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main > section{
+    margin-top: 130px;
 }
 
 /* Header Styles */
@@ -80,10 +94,54 @@
 
 .banner-description{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .banner-image{
+    width: 100%;
     max-height: 700px;
     margin-bottom: 45px;
+}
+
+.teams{
+    align-items: center;
+    gap: 70px;
+}
+
+.team-images-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.features{
+    max-width: 540px;
+}
+
+.feature-title{
+    margin-bottom: 24px;
+}
+
+.feature-description{
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 32px;
+}
+
+#quick1{
+    font-weight: 500;
+}
+
+#quick2{
+    color: #ff900e;
+}
+
+@media screen and (max-width: 576px) {
+    .navbar, .nav-links, .teams{
+        flex-direction: column;
+    }
+
+    .team-images-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
